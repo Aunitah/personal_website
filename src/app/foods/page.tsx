@@ -11,7 +11,7 @@ export default function FoodsPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">My love for shrimp and salmon</h2>
         <div className="grid grid-cols-4 gap-6 mb-6">
-          {[1, 2, 3, 4].map(i => (
+          {[1, 2, 4].map(i => (
             <img
               key={i}
               src={`/foods/seafood${i}.jpg`}
@@ -22,16 +22,6 @@ export default function FoodsPage() {
         </div>
         <div className="grid grid-cols-3 gap-6 mb-6">
           {[5, 6, 7].map(i => (
-            <img
-              key={i}
-              src={`/foods/seafood${i}.jpg`}
-              alt={`Seafood dish ${i}`}
-              className="w-full h-80 object-cover rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-200"
-            />
-          ))}
-        </div>
-        <div className="grid grid-cols-3 gap-6">
-          {[8, 9, 10].map(i => (
             <img
               key={i}
               src={`/foods/seafood${i}.jpg`}
@@ -54,8 +44,8 @@ export default function FoodsPage() {
             />
           ))}
         </div>
-        <div className="grid grid-cols-4 gap-6">
-          {[5, 6, 7, 8].map(i => (
+        <div className="grid grid-cols-3 gap-6">
+          {[5, 6, 7].map(i => (
             <img
               key={i}
               src={`/foods/persian${i}.jpg`}
