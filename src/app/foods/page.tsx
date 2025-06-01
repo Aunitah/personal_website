@@ -10,7 +10,7 @@ export default function FoodsPage() {
 
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">My love for shrimp and salmon</h2>
-        <div className="grid grid-cols-4 gap-6 mb-6">
+        <div className="grid grid-cols-3 gap-6 mb-6">
           {[1, 2, 4].map(i => (
             <img
               key={i}
