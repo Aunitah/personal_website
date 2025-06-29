@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Her Living Letter',
-  description: 'Robotics Software Engineer, ML Researcher, and Lifelong Learner',
+
 }
 
 export default function RootLayout({

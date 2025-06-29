@@ -11,28 +11,28 @@ export function About() {
         <p className="leading-relaxed">
           My publication on the Persona Creative Magazine volume 42:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 my-2">
           <img 
             src="/magazine/magazine1.jpg" 
             alt="Persona Creative Magazine Volume 42 - Cover" 
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg max-w-[250px] mx-auto"
           />
-          <div className="space-y-4">
+          <div className="space-y-1">
             <img 
               src="/magazine/magazine2.jpg" 
               alt="Persona Creative Magazine Volume 42 - Inside" 
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg max-w-[250px] mx-auto"
             />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-1">
               <img 
                 src="/magazine/magazine3.jpg" 
                 alt="Persona Creative Magazine Volume 42 - Page 1" 
-                className="rounded-lg shadow-lg w-full"
+                className="rounded-lg shadow-lg w-full max-w-[150px] mx-auto"
               />
               <img 
                 src="/magazine/magazine4.jpg" 
                 alt="Persona Creative Magazine Volume 42 - Page 2" 
-                className="rounded-lg shadow-lg w-full"
+                className="rounded-lg shadow-lg w-full max-w-[150px] mx-auto"
               />
             </div>
           </div>
