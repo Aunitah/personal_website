@@ -5,7 +5,6 @@ export function Header() {
       <nav className="flex items-center">
         <a href="/" className="mr-6 hover:underline">Home</a>
         <a href="/blog" className="mr-6 hover:underline">Blog</a>
-        <a href="/foods" className="mr-6 hover:underline">Flavors</a>
       </nav>
     </header>
   )

@@ -37,22 +37,6 @@ export function About() {
             </div>
           </div>
         </div>
-        <p className="leading-relaxed">
-          Cooking is another passion I've carried with me through college, a way to unwind after long days of studying, but also a way to stay connected to home. Preparing food reminds me of my family, especially my grandmother, whose love for cooking shaped so many of my memories. Through every dish, I try to hold onto that warmth and share it with others.
-        </p>
-        <div className="my-8">
-          <h3 className="text-xl font-semibold mb-4">Tahchin: Persian Food - The Crispy Bottom of Heaven</h3>
-          <div className="flex justify-center">
-            <img 
-              src="/foods/tahchin.jpg" 
-              alt="Tahchin - Persian Saffron Rice Cake" 
-              className="rounded-lg shadow-lg w-full max-w-sm mx-auto"
-            />
-          </div>
-          <div className="text-center mt-4">
-            <a href="/foods" className="text-blue-600 hover:underline">See the rest of flavors</a>
-          </div>
-        </div>
       </div>
     </section>
   )
