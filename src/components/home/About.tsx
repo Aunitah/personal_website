@@ -3,7 +3,7 @@ export function About() {
     <section className="prose prose-lg max-w-none -mt-2 mb-8">
       <div className="space-y-6">
         <p className="text-white text-lg leading-relaxed">
-          I'm Aunita, an Iranian writer. For me writing is a way to make sense of the world, whether through opinion pieces, poetry, or personal reflections. I moved to the U.S. from Iran at 19 and during the COVID-19 pandemic I taught myself English. Since then, writing in this new language has become a powerful way for me to connect, reflect, and share.
+          I'm Aunita, an Iranian writer exploring how identity, culture, and technology shape modern life. Writing, for me, is a way to make sense of the world, through essays, poetry, and reflections on belonging, language, and the pace of change. I moved to the U.S. from Iran at nineteen and taught myself English during the pandemic. Since then, writing in this language has become both a practice of self-expression and a lens through which I examine how we live, connect, and adapt in an ever-shifting world.
         </p>
       </div>
     </section>
