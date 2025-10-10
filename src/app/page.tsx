@@ -36,9 +36,9 @@ export default function Home() {
         <About />
         <div className="space-y-16">
           {allPosts.map((post) => (
-            <article key={post.slug} className="prose prose-sm max-w-none">
+            <article key={post.slug} className="prose max-w-none text-xs">
               <header className="mb-4">
-                <h2 className="text-orange-500 text-2xl font-bold mb-2">{post.title}</h2>
+                <h2 className="text-orange-500 text-lg font-bold mb-2">{post.title}</h2>
               </header>
               <div className="markdown-content text-white leading-relaxed">
                 <MDXRemote 
