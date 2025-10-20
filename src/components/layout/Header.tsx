@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <header className="flex justify-between items-start">
-      <h1 className="text-4xl font-bold text-white">Her Living Letter</h1>
+      <h1 className="text-4xl font-bold text-orange-500">Her Living Letter</h1>
       <div className="flex flex-col items-end space-y-1">
         <a 
           href="mailto:aunita.hakimi@yahoo.com" 
