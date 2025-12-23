@@ -3,7 +3,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white" style={{ boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)' }}>
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-8 lg:px-12 py-4">
         <div className="flex justify-between items-start">
-          <h1 className="text-5xl font-bold text-orange-500">Her Living Letter</h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-orange-500">Her Living Letter</h1>
           <div className="flex flex-col items-end space-y-1">
             <a 
               href="mailto:aunita.hakimi@yahoo.com" 

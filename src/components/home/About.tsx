@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section className="prose prose-xl max-w-none -mt-2 mb-3">
+    <section className="prose prose-xl max-w-none mb-3">
       <div className="space-y-6">
         <div className="border-2 border-orange-500 px-3 py-2 rounded-lg">
           <p className="text-black text-lg leading-relaxed">
