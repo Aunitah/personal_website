@@ -72,6 +72,22 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-lg;
+    font-family: 'Libre Baskerville', serif;
+  }
+}
+
+@layer utilities {
+  .prose {
+    color: black;
+  }
+  
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    color: #f97316; /* orange-500 */
   }
 }

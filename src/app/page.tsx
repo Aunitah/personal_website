@@ -36,11 +36,11 @@ export default function Home() {
         <About />
         <div className="space-y-16">
           {allPosts.map((post) => (
-            <article key={post.slug} className="prose max-w-none text-sm">
+            <article key={post.slug} className="prose max-w-none text-base">
               <header className="mb-4">
-                <h2 className="text-orange-500 text-xl font-bold mb-2">{post.title}</h2>
+                <h2 className="text-orange-500 text-2xl font-bold mb-2">{post.title}</h2>
               </header>
-              <div className="markdown-content text-white leading-relaxed">
+              <div className="markdown-content text-black leading-relaxed">
                 <MDXRemote 
                   source={post.content} 
                   components={components}

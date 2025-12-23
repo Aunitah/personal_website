@@ -34,11 +34,11 @@ export default async function Post({ params }: { params: { slug: string } }) {
     
     return (
       <PageWrapper>
-        <article className="prose prose-lg max-w-none prose-ol:list-decimal prose-ol:ml-4">
+        <article className="prose prose-xl max-w-none prose-ol:list-decimal prose-ol:ml-4">
           <header className="mb-8">
-            <h1 className="text-3xl font-bold mb-2">{post.frontmatter.title}</h1>
+            <h1 className="text-4xl font-bold mb-2 text-orange-500">{post.frontmatter.title}</h1>
           </header>
-          <div className="markdown-content">
+          <div className="markdown-content text-black">
             <MDXRemote 
               source={post.content} 
               components={components}

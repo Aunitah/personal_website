@@ -9,11 +9,11 @@ export default function Blog() {
     <PageWrapper>
       <div className="space-y-16">
         {allPosts.map((post) => (
-          <article key={post.slug} className="prose prose-lg max-w-none">
+          <article key={post.slug} className="prose prose-xl max-w-none">
             <header className="mb-4">
-              <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+              <h2 className="text-3xl font-bold mb-2 text-orange-500">{post.title}</h2>
             </header>
-            <div className="markdown-content">
+            <div className="markdown-content text-black">
               <p className="mb-4">
                 {post.content.split('\n').slice(0, 3).join('\n')}
               </p>
