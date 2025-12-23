@@ -7,13 +7,13 @@ export function Header() {
           <div className="flex flex-col items-end space-y-1">
             <a 
               href="mailto:aunita.hakimi@yahoo.com" 
-              className="text-orange-500 hover:text-orange-400 hover:underline text-base"
+              className="text-orange-500 hover:text-orange-400 hover:underline text-base text-right"
             >
               Contact me here
             </a>
             <a 
               href="https://url.usb.m.mimecastprotect.com/s/pwJhCWWA5rTzoqj7Lc6fVfoboKw?domain=canva.com" 
-              className="text-orange-500 hover:text-orange-400 hover:underline text-base"
+              className="text-orange-500 hover:text-orange-400 hover:underline text-base text-right"
               target="_blank"
               rel="noopener noreferrer"
             >

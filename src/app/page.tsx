@@ -34,6 +34,7 @@ export default function Home() {
     <PageWrapper>
       <div className="space-y-16">
         <About />
+        <hr className="border-t border-orange-500 my-1" />
         <div className="space-y-16">
           {allPosts.map((post) => (
             <article key={post.slug} className="prose max-w-none text-base">
