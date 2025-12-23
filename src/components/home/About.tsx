@@ -5,15 +5,31 @@ import { useState, useEffect } from 'react'
 export function About() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [hasPassedIntro, setHasPassedIntro] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
+      const introThreshold = 400 // Distance past which intro is considered "passed"
       
-      // Hide when scrolling down, show when scrolling up or at top
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      // Mark that we've passed the introduction section
+      if (currentScrollY > introThreshold) {
+        setHasPassedIntro(true)
+      }
+      
+      // If we're near the top, always show and reset the "passed" flag
+      if (currentScrollY <= 200) {
+        setIsVisible(true)
+        setHasPassedIntro(false)
+      } 
+      // If we've passed the intro, keep it hidden even when scrolling up
+      else if (hasPassedIntro) {
         setIsVisible(false)
-      } else if (currentScrollY < lastScrollY || currentScrollY <= 100) {
+      }
+      // Otherwise, show/hide based on scroll direction
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false)
+      } else if (currentScrollY < lastScrollY) {
         setIsVisible(true)
       }
       
@@ -22,7 +38,7 @@ export function About() {
 
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
+  }, [lastScrollY, hasPassedIntro])
 
   return (
     <section 
